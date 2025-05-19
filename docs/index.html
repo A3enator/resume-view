@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رزومه من - برنامه‌نویس</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="modern-header animated-header">
+        <div class="header-content">
+          <img src="IMG_3559.PNG" alt="Amir Barzgar" class="modern-profile animated-img">
+          <div class="header-text">
+            <h1>
+              <span class="blue animated-name">Amir</span><br>
+              <span class="purple animated-name">Barzgar</span>
+            </h1>
+            <a href="https://github.com/A3enator" class="github-btn animated-btn" target="_blank">open github</a>
+          </div>
+        </div>
+      </header>
+
+    <section id="about" class="slide-up">
+        <h2> about me </h2>
+        <P>            سلام! من امیرمحمد برزگر هستم، برنامه‌نویس و توسعه‌دهنده وب با تمرکز ویژه بر توسعه بک‌اند. تخصص اصلی من در زبان Python و فریم‌ورک‌های قدرتمند Django و Django REST Framework است.
+            
+            
+        در مسیر حرفه‌ای‌ام، تجربه طراحی و پیاده‌سازی سیستم‌های تحت وب مقیاس‌پذیر، امن و با عملکرد بالا را به دست آورده‌ام. همچنین در کنار توسعه بک‌اند، با PHP، WordPress و ابزار طراحی Elementor نیز آشنایی کامل دارم و توانایی پیاده‌سازی وب‌سایت‌های کامل از صفر تا صد را دارم.
+        
+        
+        من به نوشتن کد تمیز، مستندسازی مناسب و یادگیری مداوم اهمیت می‌دهم و همواره به دنبال ارائه راه‌حل‌های فنی کارآمد برای چالش‌های مختلف پروژه‌ها هستم.       
+        </P>
+    </section>
+
+    <section id="skills" class="fade-in">
+        <h2>مهارت‌ها | Skills</h2>
+        <ul>
+            <li>Python / Django</li>
+            <li>WordPress/ Elementor</li>
+            <li>PHP / writing plugins</li>
+        </ul>
+    </section>
+
+    <section id="certificates" class="slide-up section-animate">
+        <h2>مدارک من</h2>
+        <div class="certificate">
+            <h3>مدرک برنامه‌نویسی Python</h3>
+            <a href="C:\Users\siyav\Downloads\Telegram Desktop\amir.pdf" target="_blank" class="download-btn">مشاهده و دانلود مدرک (PDF)</a>
+        </div>
+        <!-- اگر مدرک دیگری داری، به همین صورت اضافه کن -->
+        <!--
+        <div class="certificate">
+            <h3>نام مدرک دیگر</h3>
+            <a href="certificate2.pdf" target="_blank" class="download-btn">مشاهده و دانلود مدرک (PDF)</a>
+        </div>
+        -->
+    </section>
+
+    <section id="contact" class="fade-in">
+        <h2>contact me</h2>
+        <p>email : siyavashamir686@gmail.com</p>
+        <p>لینکدین: linkedin.com/in/yourprofile</p>
+        <p>GITHUB : https://github.com/A3enator</p>
+    </section>
+
+    <div class="link-btn-container">
+      <a href="C:\Users\siyav\OneDrive\Belgeler\cusor.code\python_learn_page\python-learning.html" class="link-btn">
+        درمورد اموزش python 
+      </a>
+    </div>
+
+    <footer>
+        <p>A3ENATOR@</p>
+    </footer>
+
+    <script>
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, { threshold: 0.2 });
+
+      document.querySelectorAll('.section-animate').forEach(section => {
+        observer.observe(section);
+      });
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>
